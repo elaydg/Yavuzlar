@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #7895CB; /* sayfanın arka plan rengi*/
+}
+
+.app{
+    background: #C5DFF8; /*kutuların rengi*/
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px; /* yuvarlaklık sağlar*/
+    padding: 30px; /*kutuların içindeki boşluk*/
+
+}
+
+.app h1{
+    font-size: 25px;
+    color: #4A55A2;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px; /* başlığı cevaplardan ayıran çizginin yeri*/
+}
+
+.quiz{
+    padding: 20px 0; /* quiz class'ı ayırmak için gereken boşluk.*/
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #4A55A2;
+    font-weight: 600;
+    padding-bottom: 13px;
+    padding-top: 5px;
+}
+
+.btn{
+    background: #fff;
+    color: #4A55A2;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #4A55A2;
+    padding: 20px;
+    margin: 12px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+    background: #7895CB;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #4A55A2;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 1px solid #4A55A2;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none; /*butonun görünmesini engeller*/
+}
+
+.correct{
+    background: #9AD0C2;
+}
+.incorrect{
+    background: #E23E57;
+}
+
+.difficulty-box {
+    background: #4A55A2;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 1px solid #4A55A2;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.accordion-body {
+    display: none;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .accordion-body.active {
+    display: block;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #4A55A2;
+    color: #4A55A2;
+  }
+  
+  .accordion-header {
+    color: #4A55A2;
+    font-weight: 500;
+    width: 100%;
+    margin: 12px 0;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #4A55A2;
+    border-radius: 4px;
+  }
+  
+  .accordion-header button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #7895CB;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #7895CB;
+  }
+  
+  .delete-btn {
+    background-color: #c12419;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c12419;
+  }
+
+  .search-container{
+    background: #4A55A2;
+    color: #fff;
+    font-weight: 300;
+    width: 500px;
+    border: 1px solid #4A55A2;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center; /* Ortalama için */
+    align-items: center;
+  }
+
+  #searchNumber {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7895CB;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #7895CB;
+}
+
+.add-question-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#addQuestionButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4A55A2;
+    border: 2px solid #4A55A2;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addQuestionButton:hover {
+    background-color: #4A55A2;
+}
+
+.addQuestionForm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #4A55A2;
+}

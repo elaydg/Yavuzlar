@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Question</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="addQuestion.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <div class="addQuestionForm">
+            <h1>Add New Question</h1>
+            <form action="/" method="POST">
+                <input type="text" id="question" name="question" placeholder="Question" required><br><br>
+
+                <label>
+                    <input type="text" id="answerA" name="answerA" placeholder="A)" required>
+                    <input type="radio" name="correctAnswer" value="A" required> Correct
+                </label><br><br>
+
+                <label>
+                    <input type="text" id="answerB" name="answerB" placeholder="B)" required>
+                    <input type="radio" name="correctAnswer" value="B" required> Correct
+                </label><br><br>
+
+                <label>
+                    <input type="text" id="answerC" name="answerC" placeholder="C)" required>
+                    <input type="radio" name="correctAnswer" value="C" required> Correct
+                </label><br><br>
+
+                <label>
+                    <input type="text" id="answerD" name="answerD" placeholder="D)" required>
+                    <input type="radio" name="correctAnswer" value="D" required> Correct
+                </label><br><br>
+
+                <label for="difficulty">Select Difficulty:</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                    <option value="Very Hard">Very Hard</option>
+                </select><br><br>
+
+                <button class="btn" type="submit">Add Question</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
